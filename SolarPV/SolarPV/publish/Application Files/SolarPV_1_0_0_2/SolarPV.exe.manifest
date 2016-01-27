@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="SolarPV.exe" version="1.0.0.2" publicKeyToken="7f754008170c1d57" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="SolarPV" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="SolarPV.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SolarPV.exe" size="56832">
+      <assemblyIdentity name="SolarPV" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>uCkUum/5eG2XMxXMS1iKTNY+OOc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="SolarPV.exe.config" size="433">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>mY3VG1izdeTwRZaBQJPdOnPgLCs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="solarpvbd.mdf" size="3211264" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>58xdg8ekiENSHp1LSdJubCZitFw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="solarpvbd_log.ldf" size="802816" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>XY8bAtLAnWYvHlJ+Rhut9M6dyVg=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=MEHEDIHP\Muhammad" issuerKeyHash="c8ce828d9f5c16599ce8e080e58a4e22e86ff6b8" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>Stwwcl8FBAcMOsSQ6vh1SECHZiY=</DigestValue></Reference></SignedInfo><SignatureValue>cimOk1EaCRNItSs03VxM970RZOJwXz3GJt+tGyqyp3/wzLaIlby1ZxIDd8OtxAHhkScpKMhBOy7VgWsxkyrVILByjd+xoiC8l5/tKvIEVnM3QkTW+o0K9Pt1OF5qom+Rg3HtXAoYFFaf77QQhhcA7YHf1VdJw67pGeWUAjkIQdw=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>ogDWozgIN5/27fpxaqM3S56UVogClhl5/FcgZB8waeb8flNYpPHq3Dw9yHd/fD/nSW8gRNpDO3X+RzGTw0vuLZXhabsnm7SISr2sMZ2AfazTFJpXnbI4lldYZ9J6DyRGhbCpfZJMwGy6j4UlKwaoz0v96KyntN3pVht9s3Y3h2s=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="266687404875f8ea90c43a0c0704055f7230dc4a" Description="" Url=""><as:assemblyIdentity name="SolarPV.exe" version="1.0.0.2" publicKeyToken="7f754008170c1d57" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=MEHEDIHP\Muhammad</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>F49v0K4B3korKEebMzCakXq1L5Q=</DigestValue></Reference></SignedInfo><SignatureValue>odqszdjJgAAYjHzS7oryqoO7l0jo5Gho3WBDxzl0FqdUuaOXYsNqWbRBD0nkJSQg4MsKtAUQUsmua46yuUI7h3WpBRA1KRATeq7ongU16BJamiDmaY29vsF5c469F6asysLaK0LNBTD/D0VSJE5JOneQqF8JcnoWWTLy/rBpHuc=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>ogDWozgIN5/27fpxaqM3S56UVogClhl5/FcgZB8waeb8flNYpPHq3Dw9yHd/fD/nSW8gRNpDO3X+RzGTw0vuLZXhabsnm7SISr2sMZ2AfazTFJpXnbI4lldYZ9J6DyRGhbCpfZJMwGy6j4UlKwaoz0v96KyntN3pVht9s3Y3h2s=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB3TCCAUagAwIBAgIQbhAVMZfVFKlHRLqNiWvMyzANBgkqhkiG9w0BAQUFADAtMSswKQYDVQQDHiIATQBFAEgARQBEAEkASABQAFwATQB1AGgAYQBtAG0AYQBkMB4XDTE1MDMyNzAwMjUxMVoXDTE2MDMyNjA2MjUxMVowLTErMCkGA1UEAx4iAE0ARQBIAEUARABJAEgAUABcAE0AdQBoAGEAbQBtAGEAZDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAogDWozgIN5/27fpxaqM3S56UVogClhl5/FcgZB8waeb8flNYpPHq3Dw9yHd/fD/nSW8gRNpDO3X+RzGTw0vuLZXhabsnm7SISr2sMZ2AfazTFJpXnbI4lldYZ9J6DyRGhbCpfZJMwGy6j4UlKwaoz0v96KyntN3pVht9s3Y3h2sCAwEAATANBgkqhkiG9w0BAQUFAAOBgQAvtERx+9UVa0uEqelJ13fLDHrh2soFl2etFnEe+I7b0/dgLRawNtD6GgPEHrpXYy8IwabXkFGudDvARDUIk1auuXVcwzUUXwyUJeNmZzjtCbzUX3deMxMzMw4YLOlTnjcPfXoEzyLQoVgCuGbs9D+1bEMLsicq5tDG3wcTIU7Adg==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
